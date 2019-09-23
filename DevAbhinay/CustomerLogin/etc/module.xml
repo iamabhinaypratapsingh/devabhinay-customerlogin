@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ *Developed by @DevAbhinay
+ *gmail:abhinay111222@gmail.com
+ *linked: https://www.linkedin.com/in/singh-abhinay/
+ * This code is used for public.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="DevAbhinay_CustomerLogin" setup_version="1.0.0">
+    	<sequence>
+            <module name="Magento_Customer" />
+        </sequence>
+    </module>
+</config>

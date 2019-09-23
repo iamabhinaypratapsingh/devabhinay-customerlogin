@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ *Developed by @DevAbhinay
+ *gmail:abhinay111222@gmail.com
+ *linked: https://www.linkedin.com/in/singh-abhinay/
+ * This code is used for public.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="customerlogin" frontName="customerlogin">
+            <module name="DevAbhinay_CustomerLogin"/>
+        </route>
+    </router>
+</config>

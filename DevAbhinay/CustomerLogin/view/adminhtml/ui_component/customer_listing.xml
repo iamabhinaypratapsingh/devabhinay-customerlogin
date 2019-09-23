@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ *Developed by @DevAbhinay
+ *gmail:abhinay111222@gmail.com
+ *linked: https://www.linkedin.com/in/singh-abhinay/
+ * This code is used for public.
+ */
+-->
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+   <columns name="customer_columns" class="Magento\Customer\Ui\Component\Listing\Columns">
+    <actionsColumn class="DevAbhinay\CustomerLogin\Ui\Component\Listing\Column\Actions" name="actions">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="indexField" xsi:type="string">entity_id</item>
+                </item>
+            </argument>
+        </actionsColumn>
+</columns>
+</listing>
