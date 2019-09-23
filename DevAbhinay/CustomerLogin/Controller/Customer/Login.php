@@ -51,8 +51,9 @@ class Login extends \Magento\Framework\App\Action\Action
      */
     public function execute()
     {
+        $cId = $this->getRequest()->getParam('id');
         try {
-            $this->_customerSession->loginById(1);
+            $this->_customerSession->loginById($cId);
             $this->_customerSession->regenerateId();
             $redirectUrl = $this->_accountRedirect->getRedirectCookie();
             $this->_accountRedirect->clearRedirectCookie();
@@ -62,7 +63,7 @@ class Login extends \Magento\Framework\App\Action\Action
 
         } catch (Exception $e) {
             $this->messageManager->addError(
-                __('Unable to process your request.')
+                __('Something went wrong while login as a customer.')
             );
         }
         return $this->_accountRedirect->getRedirect();
